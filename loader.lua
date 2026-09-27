@@ -8,7 +8,6 @@ local function note(text)
 	warn("[muso] " .. text)
 end
 
--- Rivals only: its lobby and match places all belong to this one game
 if not game:IsLoaded() then game.Loaded:Wait() end
 if game.GameId ~= 6035872082 then
 	note("muso only runs in Rivals.")
